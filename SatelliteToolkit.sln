@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteToolkit", "SatelliteToolkit\SatelliteToolkit.csproj", "{59C38E00-C65E-481E-A141-C8883E5C1CD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteToolkit.Android", "SatelliteToolkit.Android\SatelliteToolkit.Android.csproj", "{C0E55534-A7ED-4CC5-BBDD-D05D6577C371}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59C38E00-C65E-481E-A141-C8883E5C1CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C38E00-C65E-481E-A141-C8883E5C1CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C38E00-C65E-481E-A141-C8883E5C1CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C38E00-C65E-481E-A141-C8883E5C1CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E55534-A7ED-4CC5-BBDD-D05D6577C371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E55534-A7ED-4CC5-BBDD-D05D6577C371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E55534-A7ED-4CC5-BBDD-D05D6577C371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E55534-A7ED-4CC5-BBDD-D05D6577C371}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

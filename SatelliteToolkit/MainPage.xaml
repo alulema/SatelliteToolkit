@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:SatelliteToolkit" xmlns:numerictextbox="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms"
+			xmlns:numericupdown="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms"
+			xmlns:listview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+			xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+            xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+			x:Class="SatelliteToolkit.MainPage">
+    <!--<StackLayout>
+        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    </StackLayout>-->
+    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" 
+                                         DrawerWidth ="200">
+        <navigationdrawer:SfNavigationDrawer.ContentView>
+            <Grid x:Name="mainContentView" 
+                  BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackLayout BackgroundColor="#1aa1d6" 
+                               Orientation="Horizontal">
+                    <Button x:Name="hamburgerButton" 
+                            HeightRequest="50" 
+                            WidthRequest="50" 
+                            HorizontalOptions="Start" 
+                            FontSize="20" 
+                            BackgroundColor="#1aa1d6" 
+                            Clicked="hamburgerButton_Clicked"/>
+                    <Label x:Name="headerLabel" 
+                           HeightRequest="50" 
+                           HorizontalTextAlignment="Center" 
+                           VerticalTextAlignment="Center" 
+                           Text="Home" FontSize="16" 
+                           TextColor="White" 
+                           BackgroundColor="#1aa1d6"/>
+                </StackLayout>
+                <Label Grid.Row="1" 
+                      x:Name="contentLabel" 
+                      VerticalOptions="Center" 
+                      HorizontalOptions="Center" 
+                      Text="Content View" 
+                      FontSize="14" 
+                      TextColor="Black"/>
+            </Grid>
+        </navigationdrawer:SfNavigationDrawer.ContentView>
+    </navigationdrawer:SfNavigationDrawer>
+</ContentPage>
