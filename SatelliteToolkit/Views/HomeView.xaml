@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             mc:Ignorable="d"
+             x:Class="SatelliteToolkit.Views.HomeView">
+    <ContentView.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <border:SfBorder x:Name="btnTool1"
+                                 Margin="5,0,0,0"
+                                 Grid.Row="0" Grid.Column="0"
+                                 BorderColor="Red"
+                                 BackgroundColor="#ffb6c1" 
+                                 HorizontalOptions="Center" 
+                                 VerticalOptions="Center"
+                                 BorderWidth="3">
+                    <border:SfBorder.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_OnTapped" />
+                    </border:SfBorder.GestureRecognizers>
+                    <StackLayout Margin="30">
+                        <Image Aspect="AspectFit"
+                               HeightRequest="48"
+                               WidthRequest="48"
+                               HorizontalOptions="Center"
+                               Source="home.png" />
+                        <Label Text="Orbital Calculations" Font="Bold,15" TextColor="White" />
+                    </StackLayout>
+                </border:SfBorder>
+
+                <border:SfBorder x:Name="btnTool2"
+                                 Margin="0,0,5,0"
+                                 Grid.Row="0" Grid.Column="1"
+                                 BorderColor="Red"
+                                 BackgroundColor="#ffb6c1" 
+                                 HorizontalOptions="Center" 
+                                 VerticalOptions="Center"
+                                 BorderWidth="3">
+                    <border:SfBorder.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_OnTapped" />
+                    </border:SfBorder.GestureRecognizers>
+                    <StackLayout Margin="30">
+                        <Image Aspect="AspectFit"
+                               HeightRequest="48"
+                               WidthRequest="48"
+                               HorizontalOptions="Center"
+                               Source="home.png" />
+                        <Label Text="Orbital Calculations" Font="Bold,15" TextColor="White" />
+                    </StackLayout>
+                </border:SfBorder>
+
+                <border:SfBorder x:Name="btnTool3"
+                                 Margin="5,0,0,0"
+                                 Grid.Row="1" Grid.Column="0"
+                                 BorderColor="Red"
+                                 BackgroundColor="#ffb6c1" 
+                                 HorizontalOptions="Center" 
+                                 VerticalOptions="Center"
+                                 BorderWidth="3">
+                    <border:SfBorder.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_OnTapped" />
+                    </border:SfBorder.GestureRecognizers>
+                    <StackLayout Margin="30">
+                        <Image Aspect="AspectFit"
+                               HeightRequest="48"
+                               WidthRequest="48"
+                               HorizontalOptions="Center"
+                               Source="home.png" />
+                        <Label Text="Orbital Calculations" Font="Bold,15" TextColor="White" />
+                    </StackLayout>
+                </border:SfBorder>
+
+                <border:SfBorder x:Name="btnTool4"
+                                 Margin="0,0,5,0"
+                                 Grid.Row="1" Grid.Column="1"
+                                 BorderColor="Red"
+                                 BackgroundColor="#ffb6c1" 
+                                 HorizontalOptions="Center" 
+                                 VerticalOptions="Center"
+                                 BorderWidth="3">
+                    <border:SfBorder.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_OnTapped" />
+                    </border:SfBorder.GestureRecognizers>
+                    <StackLayout Margin="30">
+                        <Image Aspect="AspectFit"
+                               HeightRequest="48"
+                               WidthRequest="48"
+                               HorizontalOptions="Center"
+                               Source="home.png" />
+                        <Label Text="Orbital Calculations" Font="Bold,15" TextColor="White" />
+                    </StackLayout>
+                </border:SfBorder>
+
+                <border:SfBorder x:Name="btnTool5"
+                                 Margin="5,0,0,0"
+                                 Grid.Row="2" Grid.Column="0"
+                                 BorderColor="Red"
+                                 BackgroundColor="#ffb6c1" 
+                                 HorizontalOptions="Center" 
+                                 VerticalOptions="Center"
+                                 BorderWidth="3">
+                    <border:SfBorder.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_OnTapped" />
+                    </border:SfBorder.GestureRecognizers>
+                    <StackLayout Margin="30">
+                        <Image Aspect="AspectFit"
+                               HeightRequest="48"
+                               WidthRequest="48"
+                               HorizontalOptions="Center"
+                               Source="home.png" />
+                        <Label Text="Orbital Calculations" Font="Bold,15" TextColor="White" />
+                    </StackLayout>
+                </border:SfBorder>
+
+                <border:SfBorder x:Name="btnTool6"
+                                 Margin="0,0,5,0"
+                                 Grid.Row="2" Grid.Column="1"
+                                 BorderColor="Red"
+                                 BackgroundColor="#ffb6c1" 
+                                 HorizontalOptions="Center" 
+                                 VerticalOptions="Center"
+                                 BorderWidth="3">
+                    <border:SfBorder.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_OnTapped" />
+                    </border:SfBorder.GestureRecognizers>
+                    <StackLayout Margin="30">
+                        <Image Aspect="AspectFit"
+                               HeightRequest="48"
+                               WidthRequest="48"
+                               HorizontalOptions="Center"
+                               Source="home.png" />
+                        <Label Text="Orbital Calculations" Font="Bold,15" TextColor="White" />
+                    </StackLayout>
+                </border:SfBorder>
+            </Grid>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
