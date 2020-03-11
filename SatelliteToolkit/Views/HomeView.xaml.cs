@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Windows.Input;
+using SatelliteToolkit.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,9 +14,12 @@ namespace SatelliteToolkit.Views
             InitializeComponent();
         }
 
-        private void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
+        private void BtnTool_OnClicked(object sender, EventArgs e)
         {
-            Console.Write("OK");
+            //App.Current.MainPage.DisplayAlert("Test Title", "Test", "OK");
+            App.Current.MainPage.Navigation.PushAsync(new Tool1Page1());
         }
+
+        public ICommand Tool1Cmd { get; set; }
     }
 }

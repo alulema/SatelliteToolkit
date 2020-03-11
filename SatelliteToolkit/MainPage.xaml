@@ -76,9 +76,6 @@
                             <listview:SfListView.ItemTemplate>
                                 <DataTemplate>
                                     <StackLayout Orientation="Horizontal">
-                                        <!--<Image x:Name="menuItemIcon" Margin="15,0,0,0" />-->
-                                        <!--<Label x:Name="iconLabel" Text="{Binding Icon}" TextColor="{Binding FontColor}" Margin="15,0,0,0" FontSize="20" HeightRequest="25" VerticalTextAlignment="Center" VerticalOptions="Center">
-                                        </Label>-->
                                         <Label x:Name="menuItemLabel" Margin="15,0,0,0" Text="{Binding MenuItem}" TextColor="{Binding FontColor}" VerticalTextAlignment="Center" HeightRequest="25" VerticalOptions="Center" YAlign="Center" />
                                     </StackLayout>
                                 </DataTemplate>
@@ -121,13 +118,6 @@
                            BackgroundColor="#1aa1d6"/>
                 </StackLayout>
                 <views:HomeView Grid.Row="1"></views:HomeView>
-                <!--<Label Grid.Row="1" 
-                      x:Name="contentLabel" 
-                      VerticalOptions="Center" 
-                      HorizontalOptions="Center" 
-                      Text="Content View" 
-                      FontSize="14" 
-                      TextColor="Black"/>-->
             </Grid>
         </navigationdrawer:SfNavigationDrawer.ContentView>
     </navigationdrawer:SfNavigationDrawer>
