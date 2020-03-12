@@ -13,6 +13,8 @@
         <ResourceDictionary>
             <Style TargetType="xForms:SfNumericTextBox" 
                    x:Key="NumericTextStyle">
+                <Setter Property="MaximumNumberDecimalDigits"
+                        Value="8" />
                 <Setter Property="ParserMode"
                         Value="Double" />
                 <Setter Property="AllowNull"
