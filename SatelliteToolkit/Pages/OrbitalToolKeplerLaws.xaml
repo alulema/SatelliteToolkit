@@ -8,7 +8,7 @@
              xmlns:viewModel="clr-namespace:SatelliteToolkit.ViewModel;assembly=SatelliteToolkit"
              mc:Ignorable="d"
              Title="Orbital: Kepler Laws"
-             x:Class="SatelliteToolkit.Pages.Tool1KeplerLaws">
+             x:Class="SatelliteToolkit.Pages.OrbitalToolKeplerLaws">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="xForms:SfNumericTextBox" 
@@ -48,7 +48,7 @@
     <ContentPage.Content>
         <Grid>
             <Grid.BindingContext>
-                <viewModel:Tool1KeplerLawsViewModel />
+                <viewModel:OrbitalToolKeplerLawsViewModel />
             </Grid.BindingContext>
             <Grid.RowDefinitions>
                 <RowDefinition />

@@ -9,7 +9,7 @@ using Xamarin.Forms;
 
 namespace SatelliteToolkit.ViewModel
 {
-    public class Tool1Page1ViewModel : INotifyPropertyChanged
+    public class OrbitalToolViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -21,7 +21,7 @@ namespace SatelliteToolkit.ViewModel
             TimeConvert
         }
 
-        public Tool1Page1ViewModel()
+        public OrbitalToolViewModel()
         {
             KeplerLawsCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.KeplerLaws));
             ApogeePerigeeCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.ApogeePerigee));
@@ -47,7 +47,7 @@ namespace SatelliteToolkit.ViewModel
             switch (cmd)
             {
                 case OrbitOptionCommand.KeplerLaws:
-                    await Application.Current.MainPage.Navigation.PushAsync(new Tool1KeplerLaws());
+                    await Application.Current.MainPage.Navigation.PushAsync(new OrbitalToolKeplerLaws());
                     break;
             }
         }

@@ -16,7 +16,7 @@ namespace SatelliteToolkit.Views
 
         private void BtnTool_OnClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage.Navigation.PushAsync(new Tool1Page1());
+            Application.Current.MainPage.Navigation.PushAsync(new OrbitalTool());
         }
 
         public ICommand Tool1Cmd { get; set; }

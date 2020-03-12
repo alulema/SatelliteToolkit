@@ -8,11 +8,11 @@ using Xamarin.Forms;
 
 namespace SatelliteToolkit.ViewModel
 {
-    public class Tool1KeplerLawsViewModel : INotifyPropertyChanged
+    public class OrbitalToolKeplerLawsViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public Tool1KeplerLawsViewModel()
+        public OrbitalToolKeplerLawsViewModel()
         {
             AngleUnit = "rad";
             CalculateCommand = new Command<Type>( (Type pageType) => Calculate());

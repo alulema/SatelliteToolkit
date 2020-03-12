@@ -7,11 +7,11 @@
              xmlns:viewModel="clr-namespace:SatelliteToolkit.ViewModel;assembly=SatelliteToolkit"
              mc:Ignorable="d"
              Title="Orbital Calc"
-             x:Class="SatelliteToolkit.Pages.Tool1Page1">
+             x:Class="SatelliteToolkit.Pages.OrbitalTool">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout.BindingContext>
-                <viewModel:Tool1Page1ViewModel />
+                <viewModel:OrbitalToolViewModel />
             </StackLayout.BindingContext>
             <Image Source="orbit.png" Margin="5"></Image>
             <buttons:SfButton Command="{Binding KeplerLawsCommand}" Text="Kepler Laws" Margin="5,0,5,0"></buttons:SfButton>
