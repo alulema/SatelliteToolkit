@@ -173,7 +173,7 @@ namespace SatelliteToolkit.ViewModel
                 SemiMajorA = Math.Pow(Constants.EarthGravitationalConstant / Math.Pow(MeanMotion.Value, 2), 1.0 / 3);
             else if (SemiMajorA.HasValue)
             {
-                MeanMotion = Math.Sqrt(Constants.EarthGravitationalConstant / Math.Pow(SemiMajorA.Value, 3));
+                MeanMotion = Math.Sqrt(Constants.EarthGravitationalConstant / Math.Pow(SemiMajorA.Value * 1000, 3));
                 Period = 2 * Math.PI / MeanMotion.Value;
             }
         }

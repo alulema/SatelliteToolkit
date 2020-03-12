@@ -1,7 +1,4 @@
-﻿using System;
-using System.Windows.Input;
-using SatelliteToolkit.Pages;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace SatelliteToolkit.Views
@@ -13,12 +10,5 @@ namespace SatelliteToolkit.Views
         {
             InitializeComponent();
         }
-
-        private void BtnTool_OnClicked(object sender, EventArgs e)
-        {
-            Application.Current.MainPage.Navigation.PushAsync(new OrbitalTool());
-        }
-
-        public ICommand Tool1Cmd { get; set; }
     }
 }

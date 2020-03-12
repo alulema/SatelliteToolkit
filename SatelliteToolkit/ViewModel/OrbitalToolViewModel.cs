@@ -42,12 +42,13 @@ namespace SatelliteToolkit.ViewModel
 
         private async Task NewCommandFunctionAsync(OrbitOptionCommand cmd)
         {
-            //await Application.Current.MainPage.DisplayAlert("ok", cmd, "ok");
-
             switch (cmd)
             {
                 case OrbitOptionCommand.KeplerLaws:
                     await Application.Current.MainPage.Navigation.PushAsync(new OrbitalToolKeplerLaws());
+                    break;
+                case OrbitOptionCommand.ApogeePerigee:
+                    await Application.Current.MainPage.Navigation.PushAsync(new OrbitalToolApogeePerigee());
                     break;
             }
         }

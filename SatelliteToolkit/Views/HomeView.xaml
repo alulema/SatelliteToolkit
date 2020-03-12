@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:viewModel="clr-namespace:SatelliteToolkit.ViewModel;assembly=SatelliteToolkit"
              mc:Ignorable="d"
              x:Class="SatelliteToolkit.Views.HomeView">
     <ContentView.Resources>
@@ -36,6 +37,9 @@
     <ContentView.Content>
         <StackLayout>
             <Grid>
+                <Grid.BindingContext>
+                    <viewModel:HomeViewModel />
+                </Grid.BindingContext>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -46,42 +50,36 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
 
-                <buttons:SfButton x:Name="btnTool1"
-                                  Text="Orbital Calc"
+                <buttons:SfButton Text="Orbital Calc"
                                   Grid.Row="0"
                                   ImageSource="home.png"
-                                  Style="{StaticResource ButtonStyleLeft}"
-                                  Clicked="BtnTool_OnClicked" />
-                <buttons:SfButton x:Name="btnTool2"
-                                  Text="Orbital Calc"
+                                  Command="{Binding OrbitalToolCommand}"
+                                  Style="{StaticResource ButtonStyleLeft}" />
+                <buttons:SfButton Text="Orbital Calc"
                                   Grid.Row="0"
                                   ImageSource="home.png"
                                   Style="{StaticResource ButtonStyleRight}"
-                                  Clicked="BtnTool_OnClicked" />
-                <buttons:SfButton x:Name="btnTool3"
-                                  Text="Orbital Calc"
+                                  Command="{Binding NotImplementedCommand}" />
+                <buttons:SfButton Text="Orbital Calc"
                                   Grid.Row="1"
                                   ImageSource="home.png"
                                   Style="{StaticResource ButtonStyleLeft}"
-                                  Clicked="BtnTool_OnClicked" />
-                <buttons:SfButton x:Name="btnTool4"
-                                  Text="Orbital Calc"
+                                  Command="{Binding NotImplementedCommand}" />
+                <buttons:SfButton Text="Orbital Calc"
                                   Grid.Row="1"
                                   ImageSource="home.png"
                                   Style="{StaticResource ButtonStyleRight}"
-                                  Clicked="BtnTool_OnClicked" />
-                <buttons:SfButton x:Name="btnTool5"
-                                  Text="Orbital Calc"
+                                  Command="{Binding NotImplementedCommand}" />
+                <buttons:SfButton Text="Orbital Calc"
                                   Grid.Row="2"
                                   ImageSource="home.png"
                                   Style="{StaticResource ButtonStyleLeft}"
-                                  Clicked="BtnTool_OnClicked" />
-                <buttons:SfButton x:Name="btnTool6"
-                                  Text="Orbital Calc"
+                                  Command="{Binding NotImplementedCommand}" />
+                <buttons:SfButton Text="Orbital Calc"
                                   Grid.Row="2"
                                   ImageSource="home.png"
                                   Style="{StaticResource ButtonStyleRight}"
-                                  Clicked="BtnTool_OnClicked" />
+                                  Command="{Binding NotImplementedCommand}" />
             </Grid>
         </StackLayout>
     </ContentView.Content>
