@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using SatelliteToolkit.Annotations;
+using SatelliteToolkit.Pages;
 using Xamarin.Forms;
 
 namespace SatelliteToolkit.ViewModel
@@ -12,12 +13,20 @@ namespace SatelliteToolkit.ViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        private enum OrbitOptionCommand
+        {
+            KeplerLaws,
+            ApogeePerigee,
+            Perturbations,
+            TimeConvert
+        }
+
         public Tool1Page1ViewModel()
         {
-            KeplerLawsCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync("KeplerLaws"));
-            ApogeePerigeeCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync("ApogeePerigee"));
-            PerturbationsCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync("Perturbations"));
-            TimeConvertCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync("TimeConvert"));
+            KeplerLawsCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.KeplerLaws));
+            ApogeePerigeeCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.ApogeePerigee));
+            PerturbationsCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.Perturbations));
+            TimeConvertCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.TimeConvert));
         }
 
         [NotifyPropertyChangedInvocator]
@@ -31,9 +40,16 @@ namespace SatelliteToolkit.ViewModel
         public ICommand PerturbationsCommand { set; get; }
         public ICommand TimeConvertCommand { set; get; }
 
-        private async Task NewCommandFunctionAsync(string cmd)
+        private async Task NewCommandFunctionAsync(OrbitOptionCommand cmd)
         {
-            await Application.Current.MainPage.DisplayAlert("ok", cmd, "ok");
+            //await Application.Current.MainPage.DisplayAlert("ok", cmd, "ok");
+
+            switch (cmd)
+            {
+                case OrbitOptionCommand.KeplerLaws:
+                    await Application.Current.MainPage.Navigation.PushAsync(new Tool1KeplerLaws());
+                    break;
+            }
         }
     }
 }

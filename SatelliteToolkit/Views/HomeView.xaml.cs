@@ -16,8 +16,7 @@ namespace SatelliteToolkit.Views
 
         private void BtnTool_OnClicked(object sender, EventArgs e)
         {
-            //App.Current.MainPage.DisplayAlert("Test Title", "Test", "OK");
-            App.Current.MainPage.Navigation.PushAsync(new Tool1Page1());
+            Application.Current.MainPage.Navigation.PushAsync(new Tool1Page1());
         }
 
         public ICommand Tool1Cmd { get; set; }
