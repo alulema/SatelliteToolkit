@@ -50,6 +50,9 @@ namespace SatelliteToolkit.ViewModel
                 case OrbitOptionCommand.ApogeePerigee:
                     await Application.Current.MainPage.Navigation.PushAsync(new OrbitalToolApogeePerigee());
                     break;
+                case OrbitOptionCommand.Perturbations:
+                    await Application.Current.MainPage.Navigation.PushAsync(new OrbitalToolPerturbations());
+                    break;
             }
         }
     }

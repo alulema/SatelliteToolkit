@@ -57,6 +57,12 @@
   <EmbeddedResource Update="Pages\OrbitalTool.xaml">
     <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
   </EmbeddedResource>
+  <EmbeddedResource Update="Pages\OrbitalToolPerturbations.xaml">
+    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+  </EmbeddedResource>
+  <EmbeddedResource Update="Pages\OrbitalToolTimeConversion.xaml">
+    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+  </EmbeddedResource>
   <EmbeddedResource Update="Views\HomeView.xaml">
     <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
   </EmbeddedResource>

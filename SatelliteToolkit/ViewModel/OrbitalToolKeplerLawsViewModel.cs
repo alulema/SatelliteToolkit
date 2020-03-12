@@ -12,18 +12,7 @@ namespace SatelliteToolkit.ViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public OrbitalToolKeplerLawsViewModel()
-        {
-            AngleUnit = "rad";
-            CalculateCommand = new Command<Type>( (Type pageType) => Calculate());
-            ToggleRadiansDegreesCommand = new Command<Type>((Type pageType) => ToggleRadiansDegrees());
-        }
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        #region Unit Button Properties
 
         private string angleUnit;
 
@@ -39,6 +28,10 @@ namespace SatelliteToolkit.ViewModel
                 }
             }
         }
+
+        #endregion
+
+        #region Numeric Properties
 
         private double? semiMajorA;
         private double? semiMinorB;
@@ -153,8 +146,27 @@ namespace SatelliteToolkit.ViewModel
             }
         }
 
+        #endregion
+
+        #region Commands
+
         public ICommand CalculateCommand { get; set; }
         public ICommand ToggleRadiansDegreesCommand { get; set; }
+
+        #endregion
+
+        public OrbitalToolKeplerLawsViewModel()
+        {
+            AngleUnit = "rad";
+            CalculateCommand = new Command<Type>((Type pageType) => Calculate());
+            ToggleRadiansDegreesCommand = new Command<Type>((Type pageType) => ToggleRadiansDegrees());
+        }
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         private void Calculate()
         {
@@ -180,7 +192,6 @@ namespace SatelliteToolkit.ViewModel
 
         private void ToggleRadiansDegrees()
         {
-
             if (TrueAnomaly.HasValue)
                 TrueAnomaly = AngleUnit == "deg" ? TrueAnomaly * Math.PI / 180 : TrueAnomaly * 180 / Math.PI;
 

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:xForms="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms"
+             xmlns:viewModel="clr-namespace:SatelliteToolkit.ViewModel;assembly=SatelliteToolkit"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             mc:Ignorable="d"
+             Title="Orbital: Perturbations"
+             x:Class="SatelliteToolkit.Pages.OrbitalToolPerturbations">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="xForms:SfNumericTextBox" 
+                   x:Key="NumericTextStyle">
+                <Setter Property="MaximumNumberDecimalDigits"
+                        Value="8" />
+                <Setter Property="ParserMode"
+                        Value="Double" />
+                <Setter Property="AllowNull"
+                        Value="True" />
+                <Setter Property="WidthRequest"
+                        Value="330" />
+                <Setter Property="HorizontalOptions"
+                        Value="End" />
+                <Setter Property="Grid.Column"
+                        Value="1" />
+            </Style>
+            <Style TargetType="buttons:SfButton" 
+                   x:Key="UnitButtonStyle">
+                <Setter Property="BackgroundColor"
+                        Value="LightGray" />
+                <Setter Property="IsCheckable"
+                        Value="True" />
+                <Setter Property="Margin"
+                        Value="0,5,5,5" />
+                <Setter Property="Grid.Column"
+                        Value="2" />
+            </Style>
+            <Style TargetType="Label" 
+                   x:Key="LabelStyle">
+                <Setter Property="FontSize"
+                        Value="Medium" />
+                <Setter Property="HorizontalTextAlignment"
+                        Value="Center" />
+                <Setter Property="VerticalTextAlignment"
+                        Value="Center" />
+            </Style>
+            <Style TargetType="Label" BasedOn="{StaticResource LabelStyle}"
+                   x:Key="LabelStyleUnit">
+                <Setter Property="Grid.Column"
+                        Value="2" />
+            </Style>
+            <Style TargetType="Label" BasedOn="{StaticResource LabelStyle}"
+                   x:Key="LabelStyleVar">
+                <Setter Property="Grid.Column"
+                        Value="0" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.BindingContext>
+                <viewModel:OrbitalToolPerturbationsViewModel />
+            </Grid.BindingContext>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15*" />
+                <ColumnDefinition Width="70*" />
+                <ColumnDefinition Width="15*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="no" Style="{StaticResource LabelStyleVar}" Grid.Row="0" />
+            <xForms:SfNumericTextBox Watermark="Nominal Mean Motion"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding NominalMeanMotion, Mode=TwoWay}"
+                                     Grid.Row="0" />
+            <Label Text="km" Style="{StaticResource LabelStyleUnit}" Grid.Row="0" />
+
+            <Label Text="a" Style="{StaticResource LabelStyleVar}" Grid.Row="1" />
+            <xForms:SfNumericTextBox Watermark="Semimajor Axis"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding SemiMajorA, Mode=TwoWay}"
+                                     Grid.Row="1" />
+            <Label Text="km" Style="{StaticResource LabelStyleUnit}" Grid.Row="1" />
+
+            <Label Text="i" Style="{StaticResource LabelStyleVar}" Grid.Row="2" />
+            <xForms:SfNumericTextBox Watermark="Inclination"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding Inclination, Mode=TwoWay}"
+                                     Grid.Row="2" />
+            <buttons:SfButton Text="{Binding InclinationUnit, Mode=TwoWay}"
+                              Command="{Binding ToggleInclinationUnitCommand}"
+                              Style="{StaticResource UnitButtonStyle}"
+                              Grid.Row="2" />
+
+            <Label Text="dΩ/dt" Style="{StaticResource LabelStyleVar}" Grid.Row="3" />
+            <xForms:SfNumericTextBox Watermark="Rate of regression of nodes"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding RateRegressionNodes, Mode=TwoWay}"
+                                     Grid.Row="3" />
+            <buttons:SfButton Text="{Binding RateNodesUnit, Mode=TwoWay}"
+                              Command="{Binding ToggleRateNodesUnitCommand}"
+                              Style="{StaticResource UnitButtonStyle}"
+                              Grid.Row="3" />
+
+            <Label Text="dω/dt" Style="{StaticResource LabelStyleVar}" Grid.Row="4" />
+            <xForms:SfNumericTextBox Watermark="Rate of Rotation of Line of Apsides"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding RateRotationLineApsides, Mode=TwoWay}"
+                                     Grid.Row="4" />
+            <buttons:SfButton Text="{Binding RateRotationUnit, Mode=TwoWay}"
+                              Command="{Binding ToggleRateRotationUnitCommand}"
+                              Style="{StaticResource UnitButtonStyle}"
+                              Grid.Row="4" />
+
+            <Label Text="ha" Style="{StaticResource LabelStyleVar}" Grid.Row="5" />
+            <xForms:SfNumericTextBox Watermark="Apogee Height"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding ApogeeHeight, Mode=TwoWay}"
+                                     Grid.Row="5" />
+            <Label Text="km" Style="{StaticResource LabelStyleUnit}" Grid.Row="5" />
+
+            <Label Text="hp" Style="{StaticResource LabelStyleVar}" Grid.Row="6" />
+            <xForms:SfNumericTextBox Watermark="PerigeeHeight"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding PerigeeHeight, Mode=TwoWay}"
+                                     Grid.Row="6" />
+            <Label Text="km" Style="{StaticResource LabelStyleUnit}" Grid.Row="6" />
+
+            <Label Text="ra" Style="{StaticResource LabelStyleVar}" Grid.Row="7" />
+            <xForms:SfNumericTextBox Watermark="Radius at Apogee"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding RadiusApogee, Mode=TwoWay}"
+                                     Grid.Row="7" />
+            <Label Text="km" Style="{StaticResource LabelStyleUnit}" Grid.Row="7" />
+
+            <Label Text="rp" Style="{StaticResource LabelStyleVar}" Grid.Row="8" />
+            <xForms:SfNumericTextBox Watermark="Radius at Perigee"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding RadiusPerigee, Mode=TwoWay}"
+                                     Grid.Row="8" />
+            <Label Text="km" Style="{StaticResource LabelStyleUnit}" Grid.Row="8" />
+
+            <Label Text="e" Style="{StaticResource LabelStyleVar}" Grid.Row="9" />
+            <xForms:SfNumericTextBox Watermark="Eccentricity"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding Eccentricity, Mode=TwoWay}"
+                                     Grid.Row="9" />
+
+            <buttons:SfButton Grid.Row="10" Grid.ColumnSpan="3" Command="{Binding CalculateCommand}" Text="Calculate" Margin="5" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

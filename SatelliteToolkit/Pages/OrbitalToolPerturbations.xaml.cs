@@ -4,9 +4,9 @@ using Xamarin.Forms.Xaml;
 namespace SatelliteToolkit.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class OrbitalToolApogeePerigee : ContentPage
+    public partial class OrbitalToolPerturbations : ContentPage
     {
-        public OrbitalToolApogeePerigee()
+        public OrbitalToolPerturbations()
         {
             InitializeComponent();
         }

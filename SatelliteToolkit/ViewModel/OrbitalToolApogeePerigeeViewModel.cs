@@ -12,18 +12,7 @@ namespace SatelliteToolkit.ViewModel
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public OrbitalToolApogeePerigeeViewModel()
-        {
-            CalculateCommand = new Command<Type>((Type pageType) => Calculate());
-        }
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        public ICommand CalculateCommand { get; set; }
+        #region Numeric Properties
 
         private double? semiMajorA;
         private double? meanMotion;
@@ -122,6 +111,25 @@ namespace SatelliteToolkit.ViewModel
                     OnPropertyChanged("Eccentricity");
                 }
             }
+        }
+
+        #endregion
+
+        #region Commands
+
+        public ICommand CalculateCommand { get; set; }
+
+        #endregion
+
+        public OrbitalToolApogeePerigeeViewModel()
+        {
+            CalculateCommand = new Command<Type>((Type pageType) => Calculate());
+        }
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         private void Calculate()
