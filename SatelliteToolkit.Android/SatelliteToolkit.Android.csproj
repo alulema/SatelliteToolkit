@@ -46,56 +46,56 @@
     <Reference Include="NumSharp.Core, Version=0.20.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\NumSharp.0.20.5\lib\netstandard2.0\NumSharp.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Buttons.XForms, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.Buttons.17.4.0.55\lib\MonoAndroid10\Syncfusion.Buttons.XForms.dll</HintPath>
+    <Reference Include="Syncfusion.Buttons.XForms, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.Buttons.17.4.0.39\lib\MonoAndroid10\Syncfusion.Buttons.XForms.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Buttons.XForms.Android, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.Buttons.17.4.0.55\lib\MonoAndroid10\Syncfusion.Buttons.XForms.Android.dll</HintPath>
+    <Reference Include="Syncfusion.Buttons.XForms.Android, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.Buttons.17.4.0.39\lib\MonoAndroid10\Syncfusion.Buttons.XForms.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Core.XForms, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.Core.17.4.0.55\lib\MonoAndroid10\Syncfusion.Core.XForms.dll</HintPath>
+    <Reference Include="Syncfusion.Core.XForms, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.Core.17.4.0.39\lib\MonoAndroid10\Syncfusion.Core.XForms.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Core.XForms.Android, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.Core.17.4.0.55\lib\MonoAndroid10\Syncfusion.Core.XForms.Android.dll</HintPath>
+    <Reference Include="Syncfusion.Core.XForms.Android, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.Core.17.4.0.39\lib\MonoAndroid10\Syncfusion.Core.XForms.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.DataSource.Portable, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.DataSource.17.4.0.55\lib\MonoAndroid10\Syncfusion.DataSource.Portable.dll</HintPath>
+    <Reference Include="Syncfusion.DataSource.Portable, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.DataSource.17.4.0.39\lib\MonoAndroid10\Syncfusion.DataSource.Portable.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.GridCommon.Portable, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.GridCommon.17.4.0.55\lib\MonoAndroid10\Syncfusion.GridCommon.Portable.dll</HintPath>
+    <Reference Include="Syncfusion.GridCommon.Portable, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.GridCommon.17.4.0.39\lib\MonoAndroid10\Syncfusion.GridCommon.Portable.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Licensing, Version=17.4.0.55, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Licensing.17.4.0.55\lib\MonoAndroid10\Syncfusion.Licensing.dll</HintPath>
+    <Reference Include="Syncfusion.Licensing, Version=17.4.0.39, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.17.4.0.39\lib\MonoAndroid10\Syncfusion.Licensing.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfChart.XForms, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.17.4.0.55\lib\MonoAndroid10\Syncfusion.SfChart.XForms.dll</HintPath>
+    <Reference Include="Syncfusion.SfChart.XForms, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.17.4.0.39\lib\MonoAndroid10\Syncfusion.SfChart.XForms.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfChart.XForms.Android, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.17.4.0.55\lib\MonoAndroid10\Syncfusion.SfChart.XForms.Android.dll</HintPath>
+    <Reference Include="Syncfusion.SfChart.XForms.Android, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfChart.17.4.0.39\lib\MonoAndroid10\Syncfusion.SfChart.XForms.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfListView.XForms, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfListView.17.4.0.55\lib\MonoAndroid10\Syncfusion.SfListView.XForms.dll</HintPath>
+    <Reference Include="Syncfusion.SfListView.XForms, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfListView.17.4.0.39\lib\MonoAndroid10\Syncfusion.SfListView.XForms.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfListView.XForms.Android, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfListView.17.4.0.55\lib\MonoAndroid10\Syncfusion.SfListView.XForms.Android.dll</HintPath>
+    <Reference Include="Syncfusion.SfListView.XForms.Android, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfListView.17.4.0.39\lib\MonoAndroid10\Syncfusion.SfListView.XForms.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfNavigationDrawer.Android, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfNavigationDrawer.17.4.0.55\lib\MonoAndroid10\Syncfusion.SfNavigationDrawer.Android.dll</HintPath>
+    <Reference Include="Syncfusion.SfNavigationDrawer.Android, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNavigationDrawer.17.4.0.39\lib\MonoAndroid10\Syncfusion.SfNavigationDrawer.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfNavigationDrawer.XForms, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfNavigationDrawer.17.4.0.55\lib\MonoAndroid10\Syncfusion.SfNavigationDrawer.XForms.dll</HintPath>
+    <Reference Include="Syncfusion.SfNavigationDrawer.XForms, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNavigationDrawer.17.4.0.39\lib\MonoAndroid10\Syncfusion.SfNavigationDrawer.XForms.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfNavigationDrawer.XForms.Android, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfNavigationDrawer.17.4.0.55\lib\MonoAndroid10\Syncfusion.SfNavigationDrawer.XForms.Android.dll</HintPath>
+    <Reference Include="Syncfusion.SfNavigationDrawer.XForms.Android, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNavigationDrawer.17.4.0.39\lib\MonoAndroid10\Syncfusion.SfNavigationDrawer.XForms.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfNumericTextBox.Android, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.17.4.0.55\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.Android.dll</HintPath>
+    <Reference Include="Syncfusion.SfNumericTextBox.Android, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.17.4.0.39\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.Android.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfNumericTextBox.XForms, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.17.4.0.55\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.XForms.dll</HintPath>
+    <Reference Include="Syncfusion.SfNumericTextBox.XForms, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.17.4.0.39\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.XForms.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.SfNumericTextBox.XForms.Android, Version=17.4451.0.55, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.17.4.0.55\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.XForms.Android.dll</HintPath>
+    <Reference Include="Syncfusion.SfNumericTextBox.XForms.Android, Version=17.4451.0.39, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfNumericTextBox.17.4.0.39\lib\MonoAndroid10\Syncfusion.SfNumericTextBox.XForms.Android.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -302,7 +302,16 @@
     <AndroidResource Include="Resources\drawable\orbitalplane.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\plot.png" />
+    <AndroidResource Include="Resources\drawable\gso_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\orbit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\radiowave_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\satelliteaccess_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Annotations.28.0.0.3\build\monoandroid90\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.28.0.0.3\build\monoandroid90\Xamarin.Android.Support.Annotations.targets')" />

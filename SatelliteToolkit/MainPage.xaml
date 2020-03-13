@@ -38,24 +38,21 @@
                                     <RowDefinition Height="35*" />
                                     <RowDefinition Height="30*" />
                                 </Grid.RowDefinitions>
-                                <Label x:Name="lbAuthor"
-                                       Grid.Row="0"
+                                <Label Grid.Row="0"
                                        Margin="10,15,0,0"
                                        Text="Created by Alexis Alulema"
                                        TextColor="White"
                                        FontSize="8"
                                        HorizontalOptions="Start"
                                        HorizontalTextAlignment="Start" />
-                                <Label x:Name="lbTitle"
-                                       Grid.Row="1"
+                                <Label Grid.Row="1"
                                        Margin="10,0,0,0"
                                        Text="Satellite Toolkit"
                                        TextColor="White"
                                        Font="Bold, 20"
                                        HorizontalOptions="Start"
                                        HorizontalTextAlignment="Start" />
-                                <Label x:Name="lbVersion"
-                                       Grid.Row="2"
+                                <Label Grid.Row="2"
                                        Margin="0,0,15,0"
                                        Text="Version 1.0"
                                        TextColor="White"

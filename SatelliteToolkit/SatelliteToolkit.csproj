@@ -21,23 +21,15 @@
 
   <ItemGroup>
     <PackageReference Include="NumSharp" Version="0.20.5" />
-    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="17.4.0.55" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="17.4.0.39" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="17.4.0.39" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.4.0.39" />
+    <PackageReference Include="Syncfusion.Xamarin.SfNavigationDrawer" Version="17.4.0.39" />
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericTextBox" Version="17.4.0.39" />
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericUpDown" Version="17.4.0.39" />
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
-    <PackageReference Include="Syncfusion.Xamarin.SfNavigationDrawer" Version="17.4.0.55" />
   </ItemGroup>
-<ItemGroup>
-	<PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.4.0.55" />
-</ItemGroup>
-<ItemGroup>
-	<PackageReference Include="Syncfusion.Xamarin.Buttons" Version="17.4.0.55" />
-</ItemGroup>
-<ItemGroup>
-	<PackageReference Include="Syncfusion.Xamarin.SfNumericTextBox" Version="17.4.0.55" />
-</ItemGroup>
-<ItemGroup>
-	<PackageReference Include="Syncfusion.Xamarin.SfNumericUpDown" Version="17.4.0.55" />
-</ItemGroup>
 <ItemGroup>
   <ProjectReference Include="..\SatelliteToolkit.Core\SatelliteToolkit.Core.csproj" />
 </ItemGroup>

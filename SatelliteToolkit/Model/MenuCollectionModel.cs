@@ -287,14 +287,12 @@ namespace SatelliteToolkit.Model
 			if (Device.RuntimePlatform == Device.iOS || Device.RuntimePlatform == Device.Android)
 			{
 
-				menuCollection.Add(getItem("Home", "H"));
 				menuCollection.Add(getItem("Get Updates", "U"));
 				menuCollection.Add(getItem("Feedback", "F"));
 			}
 
 			if (Device.RuntimePlatform == Device.UWP || (Device.RuntimePlatform == Device.UWP && Device.Idiom == TargetIdiom.Phone))
 			{
-				this.menuCollection.Add(getItem("Home", "\xEDB3"));
 				this.menuCollection.Add(getItem("Get Updates", "\xE208"));
 				this.menuCollection.Add(getItem("Feedback", "\xE120"));
 			}

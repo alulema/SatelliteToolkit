@@ -30,7 +30,7 @@ namespace SatelliteToolkit
         void Handle_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
         {
             var tempListView = sender as Syncfusion.ListView.XForms.SfListView;
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 var tempItem = (listView.ItemsSource as ObservableCollection<MenuCollectionModel>)[i];
                 if ((e.ItemData as MenuCollectionModel) != tempItem)
@@ -48,7 +48,7 @@ namespace SatelliteToolkit
 
         private void SfSwitch_OnStateChanged(object sender, SwitchStateChangedEventArgs e)
         {
-            DisplayAlert("Message", "SUCCESS", "OK");
+            //DisplayAlert("Message", "SUCCESS", "OK");
         }
     }
 }
