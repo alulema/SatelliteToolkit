@@ -1,24 +1,19 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using SatelliteToolkit.Annotations;
 using SatelliteToolkit.Pages;
 using Xamarin.Forms;
 
 namespace SatelliteToolkit.ViewModel
 {
-    public class OrbitalToolViewModel : INotifyPropertyChanged
+    public class OrbitalToolViewModel
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-
         private enum OrbitOptionCommand
         {
             KeplerLaws,
             ApogeePerigee,
             Perturbations,
-            TimeConvert
+            OrbitalPlane
         }
 
         public OrbitalToolViewModel()
@@ -26,19 +21,14 @@ namespace SatelliteToolkit.ViewModel
             KeplerLawsCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.KeplerLaws));
             ApogeePerigeeCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.ApogeePerigee));
             PerturbationsCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.Perturbations));
-            TimeConvertCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.TimeConvert));
-        }
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            OrbitalPlaneCommand = new Command<Type>(async (Type pageType) => await NewCommandFunctionAsync(OrbitOptionCommand.OrbitalPlane));
         }
 
         public ICommand KeplerLawsCommand { set; get; }
         public ICommand ApogeePerigeeCommand { set; get; }
         public ICommand PerturbationsCommand { set; get; }
         public ICommand TimeConvertCommand { set; get; }
+        public ICommand OrbitalPlaneCommand { set; get; }
 
         private async Task NewCommandFunctionAsync(OrbitOptionCommand cmd)
         {
@@ -52,6 +42,9 @@ namespace SatelliteToolkit.ViewModel
                     break;
                 case OrbitOptionCommand.Perturbations:
                     await Application.Current.MainPage.Navigation.PushAsync(new OrbitalToolPerturbations());
+                    break;
+                case OrbitOptionCommand.OrbitalPlane:
+                    await Application.Current.MainPage.Navigation.PushAsync(new OrbitalToolOrbitalPlane());
                     break;
             }
         }

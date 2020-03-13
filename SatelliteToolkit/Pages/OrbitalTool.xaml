@@ -17,6 +17,7 @@
             <buttons:SfButton Command="{Binding KeplerLawsCommand}" Text="Kepler Laws" Margin="5,0,5,0"></buttons:SfButton>
             <buttons:SfButton Command="{Binding ApogeePerigeeCommand}" Text="Apogee &amp; Perigee" Margin="5,0,5,0"></buttons:SfButton>
             <buttons:SfButton Command="{Binding PerturbationsCommand}" Text="Perturbations" Margin="5,0,5,0"></buttons:SfButton>
+            <buttons:SfButton Command="{Binding OrbitalPlaneCommand}" Text="Orbital Plane" Margin="5,0,5,0"></buttons:SfButton>
             <buttons:SfButton Command="{Binding TimeConvertCommand}" Text="Time Convert" Margin="5,0,5,0"></buttons:SfButton>
         </StackLayout>
     </ContentPage.Content>

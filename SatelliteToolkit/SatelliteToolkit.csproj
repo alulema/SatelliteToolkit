@@ -20,6 +20,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NumSharp" Version="0.20.5" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="17.4.0.55" />
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
     <PackageReference Include="Syncfusion.Xamarin.SfNavigationDrawer" Version="17.4.0.55" />
@@ -57,10 +59,13 @@
   <EmbeddedResource Update="Pages\OrbitalTool.xaml">
     <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
   </EmbeddedResource>
+  <EmbeddedResource Update="Pages\OrbitalToolOrbitalPlane.xaml">
+    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+  </EmbeddedResource>
   <EmbeddedResource Update="Pages\OrbitalToolPerturbations.xaml">
     <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
   </EmbeddedResource>
-  <EmbeddedResource Update="Pages\OrbitalToolTimeConversion.xaml">
+  <EmbeddedResource Update="Pages\OrbitalToolPlot.xaml">
     <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
   </EmbeddedResource>
   <EmbeddedResource Update="Views\HomeView.xaml">

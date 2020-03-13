@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:xForms="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms"
+             xmlns:viewModel="clr-namespace:SatelliteToolkit.ViewModel;assembly=SatelliteToolkit"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             mc:Ignorable="d"
+             Title="Orbital: Orbital Plane"
+             x:Class="SatelliteToolkit.Pages.OrbitalToolOrbitalPlane">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="xForms:SfNumericTextBox" 
+                   x:Key="NumericTextStyle">
+                <Setter Property="MaximumNumberDecimalDigits"
+                        Value="8" />
+                <Setter Property="ParserMode"
+                        Value="Double" />
+                <Setter Property="AllowNull"
+                        Value="True" />
+                <Setter Property="WidthRequest"
+                        Value="330" />
+                <Setter Property="HorizontalOptions"
+                        Value="End" />
+                <Setter Property="Grid.Column"
+                        Value="1" />
+            </Style>
+            <Style TargetType="buttons:SfButton" 
+                   x:Key="UnitButtonStyle">
+                <Setter Property="BackgroundColor"
+                        Value="LightGray" />
+                <Setter Property="IsCheckable"
+                        Value="True" />
+                <Setter Property="Margin"
+                        Value="0,5,5,5" />
+                <Setter Property="Grid.Column"
+                        Value="2" />
+            </Style>
+            <Style TargetType="Label" 
+                   x:Key="LabelStyle">
+                <Setter Property="FontSize"
+                        Value="Medium" />
+                <Setter Property="HorizontalTextAlignment"
+                        Value="Center" />
+                <Setter Property="VerticalTextAlignment"
+                        Value="Center" />
+            </Style>
+            <Style TargetType="Label" BasedOn="{StaticResource LabelStyle}"
+                   x:Key="LabelStyleUnit">
+                <Setter Property="Grid.Column"
+                        Value="2" />
+            </Style>
+            <Style TargetType="Label" BasedOn="{StaticResource LabelStyle}"
+                   x:Key="LabelStyleVar">
+                <Setter Property="Grid.Column"
+                        Value="0" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.BindingContext>
+                <viewModel:OrbitalToolOrbitalPlaneViewModel />
+            </Grid.BindingContext>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15*" />
+                <ColumnDefinition Width="70*" />
+                <ColumnDefinition Width="15*" />
+            </Grid.ColumnDefinitions>
+
+            <Image Source="orbitalplane.png" Grid.ColumnSpan="3" Grid.RowSpan="2" Margin="0,5,0,0" />
+
+            <Label Text="Mo" Style="{StaticResource LabelStyleVar}" Grid.Row="2" />
+            <xForms:SfNumericTextBox Watermark="Mean Anomaly"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding MeanAnomaly, Mode=TwoWay}"
+                                     Grid.Row="2" />
+            <buttons:SfButton Text="{Binding MeanAnomalyUnit, Mode=TwoWay}"
+                              Command="{Binding ToggleMeanAnomalyUnitCommand}"
+                              Style="{StaticResource UnitButtonStyle}"
+                              Grid.Row="2" />
+
+            <Label Text="to" Style="{StaticResource LabelStyleVar}" Grid.Row="3" />
+            <xForms:SfNumericTextBox Watermark="Initial Time"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding InitialTime, Mode=TwoWay}"
+                                     Grid.Row="3" />
+            <Label Text="sec" Style="{StaticResource LabelStyleUnit}" Grid.Row="3" />
+
+            <Label Text="t" Style="{StaticResource LabelStyleVar}" Grid.Row="4" />
+            <xForms:SfNumericTextBox Watermark="Elapsed Time"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding ElapsedTime, Mode=TwoWay}"
+                                     Grid.Row="4" />
+            <Label Text="sec" Style="{StaticResource LabelStyleUnit}" Grid.Row="4" />
+
+            <Label Text="E" Style="{StaticResource LabelStyleVar}" Grid.Row="5" />
+            <xForms:SfNumericTextBox Watermark="Eccentric Anomaly"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding EccentricAnomaly, Mode=TwoWay}"
+                                     Grid.Row="5" />
+            <buttons:SfButton Text="{Binding EccentricAnomalyUnit, Mode=TwoWay}"
+                              Command="{Binding ToggleEccentricAnomalyUnitCommand}"
+                              Style="{StaticResource UnitButtonStyle}"
+                              Grid.Row="5" />
+
+            <Label Text="e" Style="{StaticResource LabelStyleVar}" Grid.Row="6" />
+            <xForms:SfNumericTextBox Watermark="Eccentricity"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding Eccentricity, Mode=TwoWay}"
+                                     Grid.Row="6" />
+
+            <Label Text="υ" Style="{StaticResource LabelStyleVar}" Grid.Row="7" />
+            <xForms:SfNumericTextBox Watermark="True Anomaly"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding TrueAnomaly, Mode=TwoWay}"
+                                     Grid.Row="7" />
+            <buttons:SfButton Text="{Binding TrueAnomalyUnit, Mode=TwoWay}"
+                              Command="{Binding ToggleTrueAnomalyCommand}"
+                              Style="{StaticResource UnitButtonStyle}"
+                              Grid.Row="7" />
+
+            <Label Text="r" Style="{StaticResource LabelStyleVar}" Grid.Row="8" />
+            <xForms:SfNumericTextBox Watermark="Radius Vector"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding RadiusVector, Mode=TwoWay}"
+                                     Grid.Row="8" />
+            <Label Text="km" Style="{StaticResource LabelStyleUnit}" Grid.Row="8" />
+
+            <Label Text="a" Style="{StaticResource LabelStyleVar}" Grid.Row="9" />
+            <xForms:SfNumericTextBox Watermark="Semimajor Axis"
+                                     Style="{StaticResource NumericTextStyle}"
+                                     Value="{Binding SemiMajorA, Mode=TwoWay}"
+                                     Grid.Row="9" />
+            <Label Text="km" Style="{StaticResource LabelStyleUnit}" Grid.Row="9" />
+
+            <buttons:SfButton Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" Command="{Binding CalculateCommand}" Text="Calculate" Margin="5" />
+            <buttons:SfButton Grid.Row="10" Grid.Column="2" Command="{Binding ShowPlotCommand}" Text="Plot" IsEnabled="{Binding EnablePlotButton, Mode=TwoWay}" Margin="0,5,5,5" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
